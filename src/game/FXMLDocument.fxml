@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="335.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="game.MenuController">
+    <children>
+      <ImageView fitHeight="640.0" fitWidth="1024.0" layoutX="-8.0">
+         <image>
+            <Image url="@../img/background.png" />
+         </image>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </ImageView>
+      <Button fx:id="button" layoutX="460.0" layoutY="519.0" onAction="#btnExitAction" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: YELLOW; -fx-background-radius: 50; -fx-font-family: VERDANA;" text="SAIR" />
+      <Button layoutX="460.0" layoutY="447.0" mnemonicParsing="false" onMouseClicked="#IrPontuacao" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: YELLOW; -fx-background-radius: 50; -fx-font-family: VERDANA;" text="PLACAR" />
+      <Button layoutX="460.0" layoutY="382.0" mnemonicParsing="false" onAction="#btnStart" prefHeight="35.0" prefWidth="97.0" style="-fx-background-color: YELLOW; -fx-background-radius: 50;" text="JOGAR" />
+      <ImageView id="img_bruxa" fx:id="bruxaref" fitHeight="106.0" fitWidth="122.0" layoutX="701.0" layoutY="397.0" nodeOrientation="RIGHT_TO_LEFT">
+         <image>
+            <Image url="@../img/witch.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
