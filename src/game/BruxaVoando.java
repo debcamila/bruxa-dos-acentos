@@ -28,7 +28,7 @@ public class BruxaVoando extends Application{
         
         primaryStage.setScene(theScene);
         root.getChildren().add(canvas);
-        final long startNanoTime = System.nanoTime(); //1000000000.0
+        final long startNanoTime = System.nanoTime();
         
         new AnimationTimer(){
             @Override
